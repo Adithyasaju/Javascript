@@ -14,3 +14,4 @@ console.log(product)
 console.log(typeof size)    //object
 console.log(typeof color)   //object
 console.log(typeof product) //object
+

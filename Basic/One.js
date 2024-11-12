@@ -10,6 +10,13 @@ console.log(rating)
 console.log(product_name)
 console.log(brand)
 console.log("*********")
+
+//Update variable
+price=400
+
+//delete variable
+delete rating;
+  
 //find the data type
 console.log(typeof price)          //number
 console.log(typeof rating)         //number
