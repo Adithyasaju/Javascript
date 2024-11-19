@@ -998,7 +998,7 @@ let employees = [{"eid":1,"ename":"Emmi","gender":"Female"},
     {"eid":998,"ename":"Bink","gender":"Male"},
     {"eid":999,"ename":"Becca","gender":"Female"}]
 
- /* //for of
+//for of
 for(let emp of employees){
     if(emp.gender ==="Female"){
         console.log(emp)
@@ -1026,19 +1026,20 @@ for(let emp of employees){
     }
 }
 console.log("No of Male Employees:",male_Count);
-console.log("No of Female Employees:",female_Count);   */ 
+console.log("No of Female Employees:",female_Count);   
 
 //while loop
-let male_Count=0
-let female_Count=0
+let Male_Count=0
+let Female_Count=0
 let i1=0;
 while(i1<=employees.length-1){
-    if(employees.gender==="Male"){
-        male_Count=male_Count+1;                                    //or can use  male_Count++;
+    if(employees[i1].gender==="Male"){
+        Male_Count=Male_Count+1;                                    //or can use  male_Count++;
     }
-    if(employees.gender==="Female"){
-        female_Count=female_Count+1;
+    if(employees[i1].gender==="Female"){
+        Female_Count++;
     }
+    i1++
 }
-console.log("No of Male Employees:",male_Count);
-console.log("No of Female Employees:",female_Count);
+console.log("No of Male Employees:",Male_Count);
+console.log("No of Female Employees:",Female_Count);
